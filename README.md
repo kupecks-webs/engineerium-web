@@ -1,2 +1,2 @@
-# engineerium-web
-Toto je web pro modpack Engineerium
+# Engineerium Web
+Toto je web pro Minecraft modpack Engineerium!
