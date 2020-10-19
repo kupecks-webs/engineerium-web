@@ -2,3 +2,20 @@
 * {
     font-family: 'Lexend Deca', sans-serif;
 }
+body {
+    background-color: #d4d4d4;
+}
+#logo {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+#actualcontent {
+    color: #1e1e1e;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+}
