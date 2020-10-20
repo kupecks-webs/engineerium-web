@@ -10,4 +10,4 @@ request.onload = function() {
     var serverPlayerData = serverData["players"]
     var serverPlayerCount = serverPlayerData["online"]
     document.getElementById("player-number").innerHTML = serverPlayerCount + " Hráčů!"
-  }
+}
