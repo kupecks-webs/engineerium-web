@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+ :root {
+    --bg-color: #d4d4d4;
+    --txt-color: #1e1e1e;
+    --menu-hover-bg-color: #bbbbbb;
+    --menu-hover-txt-color: #000000;
+}
+[data-theme="dark"] {
+    --bg-color: #1e1e1e;
+    --txt-color: #d4d4d4;
+    --menu-hover-bg-color: #000000;
+    --menu-hover-txt-color: #bbbbbb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-color: #d4d4d4;
+    background-color: var(--bg-color);
     font-family: 'Lexend Deca', sans-serif;
 }
 nav {
@@ -9,37 +27,40 @@ nav {
     top: 0;
     width: 100%;
     height: 50px;
-    background-color: #cccccc;
+    background-color: rgba(0,0,0,0);
 }
 nav ul {
-    margin-left: 10px;
+    margin-right: 75px;
+    margin-top: 65px
 }
 nav ul li {
     list-style: none;
-    float: left;
-    line-height: 50px;
+    float: right;/*
+    line-height: 50px;*/
 }
 nav ul li a {
     display: block;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     transition: background-color .25s ease;
 }
 nav ul li a:hover {
-    background-color: #bbbbbb;
-    color: #000000;
+    background-color: var(--menu-hover-bg-color);
+    color: var(--menu-hover-txt-color);
 }
 #logo {
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 35%;
     transform: translate(-50%, -50%);
 }
 #actualcontent {
-    color: #1e1e1e;
+    color: var(--txt-color);
     position: absolute;
-    top: 35%;
+    top: 65%;
     left: 10%;
     right: 10%;
     text-align: center;
