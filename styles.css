@@ -2,12 +2,14 @@
  :root {
     --bg-color: #d4d4d4;
     --txt-color: #1e1e1e;
+    --logo-bg-color: #c7c7c7;
     --menu-hover-bg-color: #bbbbbb;
     --menu-hover-txt-color: #000000;
 }
 [data-theme="dark"] {
     --bg-color: #1e1e1e;
     --txt-color: #d4d4d4;
+    --logo-bg-color: #383838;
     --menu-hover-bg-color: #000000;
     --menu-hover-txt-color: #bbbbbb;
 }
@@ -28,6 +30,7 @@ nav {
     width: 100%;
     height: 50px;
     background-color: rgba(0,0,0,0);
+    z-index: 1;
 }
 nav ul {
     margin-right: 4%;
@@ -77,11 +80,25 @@ nav ul li a:hover {
 #player-count-wrapper {
     position: absolute;
     text-align: center;
-    top: 47%;
+    top: 46%;
     left: 25%;
     transform: translate(-50%, -50%);
 }
-
+#discord-wrapper {
+    position: absolute;
+    text-align: center;
+    top: 46%;
+    right: 25%;
+    transform: translate(50%, -50%);
+}
+#discord-wrapper a {
+    text-decoration: none;
+    color: var(--txt-color);
+}
+#discord-wrapper #discord-link {
+    text-decoration: underline;
+    color: #7289DA;
+}
 
 .s-xxlarge {
     font-size: xx-large;
@@ -94,4 +111,19 @@ nav ul li a:hover {
 }
 .s-large {
     font-size: large;
+}
+.s-medium {
+    font-size: medium;
+}
+.s-small {
+    font-size: small;
+}
+.s-smaller {
+    font-size: smaller;
+}
+.s-xsmall {
+    font-size: x-small;
+}
+.s-xxsmall {
+    font-size: xx-small;
 }
