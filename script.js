@@ -9,5 +9,12 @@ request.onload = function() {
     console.log(serverData)
     var serverPlayerData = serverData["players"]
     var serverPlayerCount = serverPlayerData["online"]
-    document.getElementById("player-number").innerHTML = serverPlayerCount + " Hráčů!"
+    if(serverPlayerCount == 1) {
+        var playerCountWord = " Hráč!";
+    } else if((serverPlayerCount == 2) || (serverPlayerCount == 3) || (serverPlayerCount == 4)) {
+        var playerCountWord = " Hráči!";
+    } else {
+        var playerCountWord = " Hráčů!";
+    }
+    document.getElementById("player-number").innerHTML = serverPlayerCount + playerCountWord
 }
