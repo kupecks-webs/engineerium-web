@@ -59,6 +59,7 @@ nav ul li a:hover {
     position: absolute;
     left: 50%;
     top: 30%;
+    width: 75%;
     transform: translate(-50%, -50%);
 }
 #actualcontent {
@@ -70,7 +71,7 @@ nav ul li a:hover {
     text-align: center;
 }
 .logobg {
-    background-color: #c7c7c7;
+    background-color: var(--logo-bg-color);
     position: absolute;
     top: 0;
     left: 0;
