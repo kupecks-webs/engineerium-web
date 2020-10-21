@@ -38,8 +38,8 @@ nav ul {
 }
 nav ul li {
     list-style: none;
-    float: right;/*
-    line-height: 50px;*/
+    float: right;
+    /*line-height: 50px;*/
 }
 nav ul li a {
     display: block;
