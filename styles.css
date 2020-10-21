@@ -100,7 +100,19 @@ nav ul li a:hover {
     text-decoration: underline;
     color: #7289DA;
 }
+table {
+    position: relative;
+    table-layout: fixed;
+    width: 100%;
+}
+table tr th, table tr td {
+    padding: 2px 0;
+    border: 1px solid var(--txt-color)
+}
 
+.s-ph {
+    font-size: 64px;
+}
 .s-xxlarge {
     font-size: xx-large;
 }
