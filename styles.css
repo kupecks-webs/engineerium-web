@@ -59,7 +59,7 @@ nav ul li a:hover {
     position: absolute;
     left: 50%;
     top: 30%;
-    width: 75%;
+    width: 70%;
     transform: translate(-50%, -50%);
 }
 #actualcontent {
@@ -106,9 +106,14 @@ table {
     table-layout: fixed;
     width: 100%;
 }
-table tr th, table tr td {
+table tr th {
+    padding: 3px 0;
+    border: 1px solid var(--txt-color);
+    font-size: 15px;
+}
+table tr td {
     padding: 2px 0;
-    border: 1px solid var(--txt-color)
+    border: 1px solid var(--txt-color);
 }
 
 .s-ph {
