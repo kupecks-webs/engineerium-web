@@ -1,5 +1,5 @@
 //Server status
-let requestURL = 'https://api.mcsrvstat.us/2/mc.lmg.gg';
+let requestURL = 'https://api.mcsrvstat.us/2/play.engineerium.eu';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
