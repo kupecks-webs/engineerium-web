@@ -49,6 +49,7 @@ nav ul li a {
     padding-top: 10px;
     padding-bottom: 10px;
     transition: background-color .25s ease;
+    color: var(--txt-color)
 }
 nav ul li a:hover {
     background-color: var(--menu-hover-bg-color);
