@@ -22,3 +22,4 @@ request.onload = function() {
     }
     document.getElementById("player-number").innerHTML = serverPlayerCount + playerCountWord
 }
+//End of Server status
