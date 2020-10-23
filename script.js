@@ -27,5 +27,4 @@ request.onload = function() {
         var cacheTimeWord = ".";
     }
     document.getElementById("player-number").innerHTML = serverPlayerCount + playerCountWord + cacheTimeWord
-}
-//End of Server status
+} //End of Server status
