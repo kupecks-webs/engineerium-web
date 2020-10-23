@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
- :root {
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+:root {
     --bg-color: #d4d4d4;
     --txt-color: #1e1e1e;
     --logo-bg-color: #c7c7c7;
@@ -7,6 +8,7 @@
     --menu-hover-txt-color: #000000;
     --menu-active-bg-color: #1e1e1e;
     --menu-active-txt-color: #d4d4d4;
+    --active-link: #8d7625;
 }
 [data-theme="dark"] {
     --bg-color: #1e1e1e;
@@ -16,6 +18,7 @@
     --menu-hover-txt-color: #bbbbbb;
     --menu-active-bg-color: #d4d4d4;
     --menu-active-txt-color: #1e1e1e;
+    --active-link: #8d7625;
 }
 
 * {
@@ -116,7 +119,7 @@ nav ul li a:active {
     transition: color .125s ease;
 }
 #discord-wrapper #discord-link:active {
-    color: #8d7625;
+    color: var(--active-link);
 }
 table {
     position: relative;
@@ -135,6 +138,20 @@ table tr td {
 table tr td a {
     color: #6441A4;
     text-decoration: underline;
+}
+.codeblock-style {
+    background-color: var(--menu-hover-bg-color);
+    color: var(--menu-hover-txt-color);
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 0 5px;
+}
+.generic-link {
+    color: rgb(67, 129, 243);
+    text-decoration: underline;
+    transition: color .125s ease;
+}
+.generic-link:active {
+    color: var(--active-link);
 }
 
 .s-ph {
