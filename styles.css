@@ -68,8 +68,12 @@ nav ul li a:active {
     position: absolute;
     left: 50%;
     top: 30%;
-    width: 68%;
+    width: 69%;
     transform: translate(-50%, -50%);
+    transition: width .5s ease;
+}
+#logo:hover {
+    width: 70%;
 }
 #actualcontent {
     color: var(--txt-color);
@@ -109,11 +113,10 @@ nav ul li a:active {
 #discord-wrapper #discord-link {
     text-decoration: underline;
     color: #7289DA;
-    transition: color .5 ease;
+    transition: color .125s ease;
 }
 #discord-wrapper #discord-link:active {
     color: #8d7625;
-    transition: color .5 ease;
 }
 table {
     position: relative;
@@ -128,6 +131,10 @@ table tr th {
 table tr td {
     padding: 2px 0;
     border: 1px solid var(--txt-color);
+}
+table tr td a {
+    color: #6441A4;
+    text-decoration: underline;
 }
 
 .s-ph {
