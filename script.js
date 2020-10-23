@@ -12,7 +12,7 @@ request.onload = function() {
     document.getElementById("player-number").innerHTML = serverPlayerCount
     if(serverPlayerCount == 1) {
         var playerCountWord = " Hráč";
-    } else if((serverPlayerCount == 2) || (serverPlayerCount == 3) || (serverPlayerCount == 4)) {
+    } else if(serverPlayerCount < 5) {
         var playerCountWord = " Hráči";
     } else {
         var playerCountWord = " Hráčů";
