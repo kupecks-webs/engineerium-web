@@ -5,6 +5,8 @@
     --logo-bg-color: #c7c7c7;
     --menu-hover-bg-color: #bbbbbb;
     --menu-hover-txt-color: #000000;
+    --menu-active-bg-color: #1e1e1e;
+    --menu-active-txt-color: #d4d4d4;
 }
 [data-theme="dark"] {
     --bg-color: #1e1e1e;
@@ -12,6 +14,8 @@
     --logo-bg-color: #383838;
     --menu-hover-bg-color: #000000;
     --menu-hover-txt-color: #bbbbbb;
+    --menu-active-bg-color: #d4d4d4;
+    --menu-active-txt-color: #1e1e1e;
 }
 
 * {
@@ -49,11 +53,16 @@ nav ul li a {
     padding-top: 10px;
     padding-bottom: 10px;
     transition: background-color .25s ease;
-    color: var(--txt-color)
+    color: var(--txt-color);
+    border-radius: 64px;
 }
 nav ul li a:hover {
     background-color: var(--menu-hover-bg-color);
     color: var(--menu-hover-txt-color);
+}
+nav ul li a:active {
+    background-color: var(--menu-active-bg-color);
+    color: var(--menu-active-txt-color);
 }
 #logo {
     position: absolute;
@@ -100,6 +109,11 @@ nav ul li a:hover {
 #discord-wrapper #discord-link {
     text-decoration: underline;
     color: #7289DA;
+    transition: color .5 ease;
+}
+#discord-wrapper #discord-link:active {
+    color: #8d7625;
+    transition: color .5 ease;
 }
 table {
     position: relative;
