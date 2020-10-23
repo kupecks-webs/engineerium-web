@@ -9,17 +9,23 @@ request.onload = function() {
     console.log(serverData)
     var serverPlayerData = serverData["players"]
     var serverPlayerCount = serverPlayerData["online"]
-    if(serverPlayerCount < 0) {
-        var playerCountWord = " Hráčů?"
-    } else if(serverPlayerCount == 0) {
-        var playerCountWord = " Hráčů."
-    } else if(serverPlayerCount == 1) {
-        var playerCountWord = " Hráč!";
+    document.getElementById("player-number").innerHTML = serverPlayerCount
+    if(serverPlayerCount == 1) {
+        var playerCountWord = " Hráč";
     } else if((serverPlayerCount == 2) || (serverPlayerCount == 3) || (serverPlayerCount == 4)) {
-        var playerCountWord = " Hráči!";
+        var playerCountWord = " Hráči";
     } else {
-        var playerCountWord = " Hráčů!";
+        var playerCountWord = " Hráčů";
     }
     document.getElementById("player-number").innerHTML = serverPlayerCount + playerCountWord
+    var serverDebugData = serverData["debug"]
+    var serverCacheTime = serverDebugData["cachetime"]
+    console.log(serverDebugData + " " + serverCacheTime)
+    if(serverCacheTime == 0) {
+        var cacheTimeWord = "!";
+    } else {
+        var cacheTimeWord = ".";
+    }
+    document.getElementById("player-number").innerHTML = serverPlayerCount + playerCountWord + cacheTimeWord
 }
 //End of Server status
