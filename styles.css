@@ -68,7 +68,7 @@ nav ul li a:active {
     position: absolute;
     left: 50%;
     top: 30%;
-    width: 70%;
+    width: 68%;
     transform: translate(-50%, -50%);
 }
 #actualcontent {
