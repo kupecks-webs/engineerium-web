@@ -11,7 +11,9 @@ request.onload = function() {
         var serverPlayerData = serverData["players"]
         var serverPlayerCount = serverPlayerData["online"]
         document.getElementById("player-number").innerHTML = serverPlayerCount
-        if(serverPlayerCount == 1) {
+        if(serverPlayerCount == 0) {
+            var playerCountWord = " Hráčů"
+        } else if(serverPlayerCount == 1) {
             var playerCountWord = " Hráč";
         } else if(serverPlayerCount < 5) {
             var playerCountWord = " Hráči";
