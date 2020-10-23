@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 :root {
     --bg-color: #d4d4d4;
     --txt-color: #1e1e1e;
@@ -142,7 +142,7 @@ table tr td a {
 .codeblock-style {
     background-color: var(--menu-hover-bg-color);
     color: var(--menu-hover-txt-color);
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Cutive Mono', monospace;
     padding: 0 5px;
 }
 .generic-link {
