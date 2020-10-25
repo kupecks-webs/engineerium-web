@@ -113,12 +113,12 @@ nav ul li a:active {
     text-decoration: none;
     color: var(--txt-color);
 }
-#discord-wrapper #discord-link {
+.discord-link {
     text-decoration: underline;
     color: #7289DA;
     transition: color .125s ease;
 }
-#discord-wrapper #discord-link:active {
+.discord-link:active {
     color: var(--active-link);
 }
 table {
