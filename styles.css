@@ -153,6 +153,14 @@ table tr td a {
 .generic-link:active {
     color: var(--active-link);
 }
+.curse-link {
+    color: #6441A4;
+    text-decoration: underline;
+    transition: color .125s ease;
+}
+.curse-link:active {
+    color: var(--active-link);
+}
 
 .s-ph {
     font-size: 64px;
