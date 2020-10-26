@@ -35,11 +35,15 @@ request.onload = function() {
         var serverMOTDClean = serverMOTDs["clean"]
         console.log("%c------------------------------", "color: #00ffaa")
         console.log("%c-----=Online player list=-----", "color: #00ffaa")
-        var serverPlayerList = serverPlayerData["list"]
-        var i;
-        for (i = 0; i < serverPlayerList.length; i++) {
-            var ii = i + 1
-            console.log(ii + ": " + serverPlayerList[i])
+        if(serverPlayerCount > 0) {
+            var serverPlayerList = serverPlayerData["list"]
+            var i;
+            for (i = 0; i < serverPlayerList.length; i++) {
+                var ii = i + 1
+                console.log(ii + ": " + serverPlayerList[i])
+            }
+        } else {
+            console.log("%c0: Noone is online", "color: #ffffff")
         }
         console.log("%c------------------------------", "color: #00ffaa")
         console.log("%c------------=MOTD=------------", "color: #00ffaa")
