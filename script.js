@@ -53,7 +53,9 @@ request.onload = function() {
         console.log("%c-------=All other info=-------", "color: #00ffaa")
         console.log(serverData)
         console.log("%c------------------------------", "color: #00ffaa")
-        console.log("%c------------------------------", "color: #00ffaa")
+        var date = new Date();
+        var unixTime = date.getTime();
+        console.log("%c-----=Time=" + unixTime + "=-----", "color: #00ffaa")
     } else {
         document.getElementById("play-number-heading").innerHTML = ""
         document.getElementById("player-number").innerHTML = "Vypadá to že server je offline.<br>Omlouváme se za způsobené nepříjemnosti."
