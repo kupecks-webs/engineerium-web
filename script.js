@@ -35,8 +35,7 @@ request.onload = function() {
         console.log("%c|-------=≡ Online player list ≡=-------|", "color: #0088aa")
         if(serverPlayerCount > 0) {
             var serverPlayerList = serverPlayerData["list"]
-            var i;
-            for (i = 0; i < serverPlayerList.length; i++) {
+            for (var i = 0; i < serverPlayerList.length; i++) {
                 var ii = i + 1
                 console.log(ii + ": " + serverPlayerList[i])
             }
