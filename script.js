@@ -6,7 +6,7 @@ request.responseType = 'json';
 request.send();
 request.onload = function() {
     const serverData = request.response;
-    console.log(serverData)
+    //console.log(serverData)
     if(serverData["online"]) {
         var serverPlayerData = serverData["players"]
         var serverPlayerCount = serverPlayerData["online"]
@@ -23,15 +23,36 @@ request.onload = function() {
         document.getElementById("player-number").innerHTML = serverPlayerCount + playerCountWord
         var serverDebugData = serverData["debug"]
         var serverCacheTime = serverDebugData["cachetime"]
-        console.log(serverDebugData + " " + serverCacheTime)
+        //console.log(serverDebugData + " " + serverCacheTime)
         if(serverCacheTime == 0) {
             var cacheTimeWord = "!";
         } else {
             var cacheTimeWord = ".";
         }
         document.getElementById("player-number").innerHTML = serverPlayerCount + playerCountWord + cacheTimeWord
+        /* ----------------------------------------------------------- */
+        var serverMOTDs = serverData["motd"]
+        var serverMOTDClean = serverMOTDs["clean"]
+        console.log("%c------------------------------", "color: #00ffaa")
+        console.log("%c-----=Online player list=-----", "color: #00ffaa")
+        var serverPlayerList = serverPlayerData["list"]
+        var i;
+        for (i = 0; i < serverPlayerList.length; i++) {
+            var ii = i + 1
+            console.log(ii + ": " + serverPlayerList[i])
+        }
+        console.log("%c------------------------------", "color: #00ffaa")
+        console.log("%c------------=MOTD=------------", "color: #00ffaa")
+        console.log(serverMOTDClean[0])
+        console.log(serverMOTDClean[1])
+        console.log("%c------------------------------", "color: #00ffaa")
+        console.log("%c-------=All other info=-------", "color: #00ffaa")
+        console.log(serverData)
+        console.log("%c------------------------------", "color: #00ffaa")
+        console.log("%c------------------------------", "color: #00ffaa")
     } else {
         document.getElementById("play-number-heading").innerHTML = ""
         document.getElementById("player-number").innerHTML = "Vypadá to že server je offline.<br>Omlouváme se za způsobené nepříjemnosti."
+        console.log("Server je offline, nemůžeme vám ukázat seznam lidí...")
     }
 } //End of Server status
