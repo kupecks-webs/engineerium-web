@@ -32,7 +32,7 @@ request.onload = function() {
         /* ----------------------------------------------------------- */
         var serverMOTDs = serverData["motd"]
         var serverMOTDClean = serverMOTDs["clean"]
-        console.log("%c|-------=≡ Online player list ≡=-------|", "color: #00ffaa")
+        console.log("%c|-------=≡ Online player list ≡=-------|", "color: #0088aa")
         if(serverPlayerCount > 0) {
             var serverPlayerList = serverPlayerData["list"]
             var i;
@@ -43,19 +43,19 @@ request.onload = function() {
         } else {
             console.log("%c0: Noone is online", "color: #ffffff")
         }
-        console.log("%c|--------------=≡ MOTD ≡=--------------|", "color: #00ffaa")
+        console.log("%c|--------------=≡ MOTD ≡=--------------|", "color: #0088aa")
         console.log(serverMOTDClean[0])
         console.log(serverMOTDClean[1])
-        console.log("%c|---------=≡ All other info ≡=---------|", "color: #00ffaa")
+        console.log("%c|---------=≡ All other info ≡=---------|", "color: #0088aa")
         console.log(serverData)
-        console.log("%c|-------=≡ Time=" + unixTime + " ≡=-------|", "color: #00ffaa")
+        console.log("%c|-------=≡ Time=" + unixTime + " ≡=-------|", "color: #0088aa")
     } else {
         document.getElementById("play-number-heading").innerHTML = ""
         document.getElementById("player-number").innerHTML = "Vypadá to že server je offline.<br>Omlouváme se za způsobené nepříjemnosti."
-        console.log("%c|--------------=≡ Info ≡=--------------|", "color: #00ffaa")
+        console.log("%c|--------------=≡ Info ≡=--------------|", "color: #0088aa")
         console.log("Server je offline")
         console.log("Máme pouze minimum dat:")
         console.log(serverData)
-        console.log("%c|-------=≡ Time=" + unixTime + " ≡=-------|", "color: #00ffaa")
+        console.log("%c|-------=≡ Time=" + unixTime + " ≡=-------|", "color: #0088aa")
     }
 } //End of Server status
