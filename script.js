@@ -33,6 +33,8 @@ request.onload = function() {
         /* ----------------------------------------------------------- */
         var serverMOTDs = serverData["motd"]
         var serverMOTDClean = serverMOTDs["clean"]
+        var date = new Date();
+        var unixTime = date.getTime();
         console.log("%c------------------------------", "color: #00ffaa")
         console.log("%c-----=Online player list=-----", "color: #00ffaa")
         if(serverPlayerCount > 0) {
@@ -53,8 +55,6 @@ request.onload = function() {
         console.log("%c-------=All other info=-------", "color: #00ffaa")
         console.log(serverData)
         console.log("%c------------------------------", "color: #00ffaa")
-        var date = new Date();
-        var unixTime = date.getTime();
         console.log("%c-----=Time=" + unixTime + "=-----", "color: #00ffaa")
         console.log("%c------------------------------", "color: #00ffaa")
     } else {
