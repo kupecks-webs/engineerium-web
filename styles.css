@@ -165,6 +165,9 @@ table tr td a {
 .s-ph {
     font-size: 64px;
 }
+.s-xxxlarge {
+    font-size: 40px;
+}
 .s-xxlarge {
     font-size: xx-large;
 }
@@ -191,4 +194,11 @@ table tr td a {
 }
 .s-xxsmall {
     font-size: xx-small;
+}
+#landingcentered {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
