@@ -30,6 +30,9 @@ body {
     background-color: var(--bg-color);
     font-family: 'Lexend Deca', sans-serif;
 }
+body#landing {
+    background-image: repeating-linear-gradient(to right, rgba(127,127,127,1) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(127,127,127,1) 100%);
+}
 nav {
     position: absolute;
     left: 0;
