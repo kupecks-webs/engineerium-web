@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Lexend+Deca&display=swap');
 :root {
     --bg-color: #d4d4d4;
     --txt-color: #1e1e1e;
