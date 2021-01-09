@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Lexend+Deca&display=swap');
+@import url('fonts.css');
 :root {
     --bg-color: #d4d4d4;
     --txt-color: #1e1e1e;
@@ -31,6 +31,7 @@ body {
 }
 body#landing {
     background-image: repeating-linear-gradient(to right, rgba(127,127,127,1) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(127,127,127,1) 100%);
+ /* background-image: repeating-linear-gradient(to right, #2A9388 0%, #1b5f58 45%, #1b5f58 55%, #2A9388 100%); */
 }
 nav {
     position: absolute;
@@ -144,7 +145,7 @@ table tr td a {
 .codeblock-style {
     background-color: var(--menu-hover-bg-color);
     color: var(--menu-hover-txt-color);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
     padding: 0 5px;
 }
 .generic-link {

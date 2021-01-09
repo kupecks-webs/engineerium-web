@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('fonts/LexendDeca-Regular.eot');
+    src: url('fonts/LexendDeca-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/LexendDeca-Regular.woff2') format('woff2'),
+        url('fonts/LexendDeca-Regular.woff') format('woff'),
+        url('fonts/LexendDeca-Regular.ttf') format('truetype'),
+        url('fonts/LexendDeca-Regular.svg#LexendDeca-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('fonts/RobotoMono-Regular.eot');
+    src: url('fonts/RobotoMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/RobotoMono-Regular.woff2') format('woff2'),
+        url('fonts/RobotoMono-Regular.woff') format('woff'),
+        url('fonts/RobotoMono-Regular.ttf') format('truetype'),
+        url('fonts/RobotoMono-Regular.svg#RobotoMono-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Guardian';
+    src: url('fonts/Guardian.eot');
+    src: url('fonts/Guardian.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Guardian.woff2') format('woff2'),
+        url('fonts/Guardian.woff') format('woff'),
+        url('fonts/Guardian.ttf') format('truetype'),
+        url('fonts/Guardian.svg#Guardian') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
